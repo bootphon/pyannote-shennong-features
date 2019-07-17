@@ -28,3 +28,38 @@
 # Julien Karadayi
 # Marvin Lavechin
 # Hadrien Titeux
+
+
+from setuptools import setup, find_packages
+
+with open('README.md') as f:
+    long_description = f.read()
+
+setup(
+
+    name='pyannote.features.shennong',
+    namespace_packages=['pyannote'],
+    packages=find_packages(),
+    install_requires=["pyannote.audio"],
+
+    version="0.1",
+
+    description='A feature extraction extension for the pyannote framework',
+    long_description=long_description,
+    long_description_content_type='text/markdown',
+
+    author='Hadrien Titeux (CoML)',
+    author_email='hadrien.titeux@ens.fr',
+    url='https://github.com/bootphon/pyannote-shennong-features',
+
+    classifiers=[
+        "Development Status :: 4 - Beta",
+        "Intended Audience :: Science/Research",
+        "License :: OSI Approved :: MIT License",
+        "Natural Language :: English",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Topic :: Scientific/Engineering"
+    ],
+)
