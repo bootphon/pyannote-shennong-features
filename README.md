@@ -1,5 +1,5 @@
 # pyannote-shennong-features
-A feature extractator for Pyannote that is based on the Shennong library
+A feature extractor for Pyannote that is based on the Shennong library
 
 ## Installation
 
@@ -13,12 +13,12 @@ conda install -c coml shennong
 Then you can pip-install the library in a regular way:
 
 ```
-pip install pyannute.features.shennong
+pip install pyannote.features.shennong
 ```
 
 ## Pyannote Configuration
 
-To use features from this librairy, this is the kind of configuration you
+To use features from this library, this is the kind of configuration you
 should add your `config.yml` file:
 
 ```yaml
