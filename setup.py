@@ -36,7 +36,6 @@ with open('README.md') as f:
     long_description = f.read()
 
 setup(
-
     name='pyannote.features.shennong',
     namespace_packages=['pyannote'],
     packages=find_packages(),
