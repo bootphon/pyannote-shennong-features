@@ -134,8 +134,8 @@ class ShennongFeatureExtraction(FeatureExtraction):
 
         return stack
 
-    def get_sliding_window(self):
-            return self.sliding_window_
+    def get_frame_info(self):
+        return self.sliding_window_
 
 
 class ShennongFilterbank(ShennongFeatureExtraction):
@@ -270,7 +270,6 @@ class ShennongFilterbank(ShennongFeatureExtraction):
 
         return fbank
 
-
     def get_dimension(self):
         n_features = 1
         n_features += self.melNbFilters
@@ -393,7 +392,6 @@ class ShennongBottleneck(ShennongFeatureExtraction):
             bottleneck = bottleneck.data
 
         return bottleneck
-
 
     def get_dimension(self):
         n_features = 0
@@ -608,6 +606,7 @@ class ShennongMfcc(ShennongFeatureExtraction):
         n_features += self.with_pitch * 3 # Pitch is two dimensional
         return n_features
 
+
 class ShennongSpectrogram(ShennongFeatureExtraction):
     """Shennong Spectrogram 
 
@@ -692,7 +691,6 @@ class ShennongSpectrogram(ShennongFeatureExtraction):
         self.pitchFmin = pitchFmin
         self.pitchFmax = pitchFmax
 
-
     def get_context_duration(self):
         return 0.
 
@@ -751,8 +749,6 @@ class ShennongSpectrogram(ShennongFeatureExtraction):
 
         else:
             spect = spect.data
-
-
 
         return spect
 
