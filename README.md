@@ -1,5 +1,5 @@
 # pyannote-shennong-features
-A feature extractor for Pyannote that is based on the Shennong library
+A feature extractor for [pyannote-audio](https://github.com/pyannote/pyannote-audio) that is based on the Shennong library
 
 ## Installation
 
@@ -16,7 +16,7 @@ Then you can pip-install the library in a regular way:
 pip install pyannote.features.shennong
 ```
 
-## Pyannote Configuration
+## pyannote-audio configuration
 
 To use features from this library, this is the kind of configuration you
 should add your `config.yml` file:
