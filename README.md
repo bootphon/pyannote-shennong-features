@@ -1,5 +1,5 @@
 # pyannote-shennong-features
-A feature extractor for [pyannote-audio](https://github.com/pyannote/pyannote-audio) that is based on the Shennong library
+A feature extractor for [pyannote-audio](https://github.com/pyannote/pyannote-audio) that is based on the [Shennong](https://github.com/bootphon/shennong) library
 
 ## Installation
 
